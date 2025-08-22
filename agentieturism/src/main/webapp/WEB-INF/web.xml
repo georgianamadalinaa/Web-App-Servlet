@@ -1,0 +1,88 @@
+
+
+<element>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+ <servlet>
+        <servlet-name>JSTLServlet</servlet-name>
+        <servlet-class>org.glassfish.servlet.JstlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JSTLServlet</servlet-name>
+        <url-pattern>/jstl/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddClientServlet</servlet-name>
+        <servlet-class>servlet.AddClientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddClientServlet</servlet-name>
+        <url-pattern>/inserare</url-pattern>
+    </servlet-mapping>
+<servlet>
+    <servlet-name>SearchClientServlet</servlet-name>
+    <servlet-class>servlet.SearchClientServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SearchClientServlet</servlet-name>
+    <url-pattern>/searchClient</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddDestinatieServlet</servlet-name>
+    <servlet-class>servlet.AddDestinatieServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddDestinatieServlet</servlet-name>
+    <url-pattern>/inserareDestinatie</url-pattern>
+</servlet-mapping>
+ <servlet>
+        <servlet-name>AngajatiServlet</servlet-name>
+        <servlet-class>servlet.AngajatiServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AngajatiServlet</servlet-name>
+        <url-pattern>/angajati</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configurare servlet pentru actualizarea destinației -->
+    <servlet>
+        <servlet-name>UpdateDestinatieServlet</servlet-name>
+        <servlet-class>servlet.UpdateDestinatieServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateDestinatieServlet</servlet-name>
+        <url-pattern>/updateDestinatie</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Configurare servlet pentru căutarea destinației -->
+    <servlet>
+        <servlet-name>SearchDestinatie</servlet-name>
+        <servlet-class>servlet.SearchDestinatieServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>SearchDestinatie</servlet-name>
+        <url-pattern>/searchDestinatie</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteClientServlet</servlet-name>
+    <servlet-class>servlet.DeleteClientServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteClientServlet</servlet-name>
+    <url-pattern>/searchClient</url-pattern>
+</servlet-mapping>
+</web-app>
+</element>
+
